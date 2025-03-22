@@ -1,6 +1,6 @@
 module github.com/abrar-mashuk/simplebank
 
-go 1.23.5
+go 1.20
 
 require github.com/lib/pq v1.10.9
 
