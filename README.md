@@ -16,9 +16,6 @@ Includes secure authentication, account management, money transfers, and robust 
 - [🧰 Tech Stack](#-tech-stack)
 - [📦 Setup Instructions](#-setup-instructions)
 - [🧪 Testing](#-testing)
-- [🔁 API Usage Examples](#-api-usage-examples)
-- [📬 Postman Collection](#-postman-collection)
-- [🎥 Terminal Demo](#-terminal-demo)
 - [📝 License](#-license)
 - [👤 Author](#-author)
 
