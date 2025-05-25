@@ -61,28 +61,28 @@ This backend system was built as a hands-on learning project to explore:
 ```bash
 git clone https://github.com/abrar-mashuk/simplebank.git
 cd simplebank
-
-### 2. Create environment file
+```
+### 2. Create an environment file
 
 Copy the example environment file and rename it to `app.env`:
 
 ```bash
 cp app.env.example app.env
-
+```
 ### 3. Run Docker containers (PostgreSQL + API server)
 
 To start your development environment with Docker:
 
 ```bash
 make compose-up
-
+```
 ##  Stopping Containers
 
 To stop all running Docker containers managed by Docker Compose, use the following Make command:
 
 ```bash
 make compose-down
-
+```
 ## 4. Run Database Migrations Manually (Optional)
 
 If you prefer to apply database migrations manually instead of automatically during container startup, you can use the following Make commands:
@@ -93,14 +93,14 @@ To run all pending migrations:
 
 ```bash
 make migrate-up
-
+```
 ### Rollback the Most Recent Migration
 
 To undo the most recent database migration, run:
 
 ```bash
 make migrate-down
-
+```
 ## 🧪 Testing
 
 ### Run All Unit Tests
@@ -116,6 +116,41 @@ To run the tests and view code coverage details:
 
 ```bash
 go test -cover ./...
+```
+---
+
+## 🐳 Docker Image Optimisation
+
+This project uses a multi-stage Docker build to generate a clean, minimal, production-ready container image.
+
+### 🔍 Image Size Comparison
+
+| Variant                 | Size    | Description                             |
+|------------------------|---------|-----------------------------------------|
+| simplebank-unoptimized | 877MB   | Single-stage build with full toolchain  |
+| simplebank-optimized   | 25.1MB  | ✅ Multi-stage build, stripped Go binary |
+
+✅ Reduced Docker image size by **~97%** using:
+- Multi-stage builds
+- Stripped Go binaries (`-ldflags="-s -w"`)
+- Minimal base image (`alpine:3.19`)
+
+
+### 🛠 Build Commands
+
+```bash
+# Build optimised image
+make docker-build-optimized
+
+# View image sizes
+make docker-size
+```
+
+### 🧪 Run Optimised Container
+
+```bash
+docker run --rm -p 8080:8080 simplebank-optimized
+```
 
 
 ## License
