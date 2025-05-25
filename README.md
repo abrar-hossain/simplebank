@@ -1,12 +1,17 @@
-# 🏦 Simple Bank
+# 💰 SimpleBank – Backend System in Go
 
-A backend service for a banking system built with Go, PostgreSQL, and Docker.  
-Includes secure authentication, account management, money transfers, and robust concurrency control with deadlock prevention.
+SimpleBank is a minimal core banking system implemented in Go. It includes secure authentication, transaction-safe logic, and clean architecture principles. The project simulates real-world backend development using modern tools and practices.
 
-[![Go](https://img.shields.io/badge/Go-1.20+-blue)](https://golang.org)  
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue)](https://www.postgresql.org/)  
-[![Build](https://img.shields.io/github/actions/workflow/status/abrar-mashuk/simplebank/ci.yml?branch=main)](https://github.com/abrar-mashuk/simplebank/actions)  
-[![License](https://img.shields.io/github/license/abrar-mashuk/simplebank)](LICENSE)
+## 🧠 Why This Project?
+
+This backend system was built as a hands-on learning project to explore:
+
+- ACID-compliant transactions
+- Secure user authentication with JWT and PASETO
+- Clean architecture with separation of concerns
+- API testing with high coverage
+- CI/CD with GitHub Actions
+- Docker-based development environments
 
 ---
 
@@ -27,7 +32,7 @@ Includes secure authentication, account management, money transfers, and robust 
 - **Secure authentication** with JWT and PASETO token standards  
 - **Concurrent transaction handling** using goroutines and channels  
 - **Deadlock-resilient logic** using transaction ordering and PostgreSQL isolation levels  
-- **4+ normalized tables** designed using DBML and type-safe queries generated via `sqlc`  
+- **4+ normalised tables** designed using DBML and type-safe queries generated via `sqlc`  
 - **80%+ unit test coverage** with mocked DB dependencies  
 - **CI/CD pipeline** using GitHub Actions for automated testing  
 - **Docker & Docker Compose** for easy local development  
