@@ -28,6 +28,8 @@ This backend system was built as a hands-on learning project to explore:
 
 ## 🚀 Features
 
+## 🚀 Features
+
 - **9+ RESTful API endpoints** for users, accounts, and money transfers  
 - **Secure authentication** with JWT and PASETO token standards  
 - **Concurrent transaction handling** using goroutines and channels  
@@ -36,7 +38,8 @@ This backend system was built as a hands-on learning project to explore:
 - **80%+ unit test coverage** with mocked DB dependencies  
 - **CI/CD pipeline** using GitHub Actions for automated testing  
 - **Docker & Docker Compose** for easy local development  
-- **Clean architecture** for scalable, maintainable code  
+- Built a minimal Docker image using multi-stage builds and Go binary stripping, reducing image size by **97% (from 877MB to 25.1MB)**; orchestrated services with Docker Compose for consistent local environments  
+- **Performance benchmark:** Sustained **200+ secure money transfers/sec** under **100 concurrent users**, with an average latency of **400ms** and **100% success rate** in full ACID-compliant operations  
 
 ---
 
