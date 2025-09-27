@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/abrar-mashuk/simplebank/util"
+	"github.com/abrar-hossain/simplebank/util"
 	"github.com/stretchr/testify/require"
 )
 

@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/abrar-mashuk/simplebank/token"
+	"github.com/abrar-hossain/simplebank/token"
 	"github.com/gin-gonic/gin"
 )
 

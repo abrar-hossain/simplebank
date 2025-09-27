@@ -1,4 +1,4 @@
-module github.com/abrar-mashuk/simplebank
+module github.com/abrar-hossain/simplebank
 
 go 1.23.0
 

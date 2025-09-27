@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	db "github.com/abrar-mashuk/simplebank/db/sqlc"
-	"github.com/abrar-mashuk/simplebank/util"
+	db "github.com/abrar-hossain/simplebank/db/sqlc"
+	"github.com/abrar-hossain/simplebank/util"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/require"
 )

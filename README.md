@@ -62,7 +62,7 @@ This backend system was built as a hands-on learning project to explore:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/abrar-mashuk/simplebank.git
+git clone https://github.com/abrar-hossain/simplebank.git  
 cd simplebank
 ```
 ### 2. Create an environment file

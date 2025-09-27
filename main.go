@@ -6,9 +6,9 @@ import (
 
 	_ "github.com/lib/pq"
 
-	"github.com/abrar-mashuk/simplebank/api"
-	db "github.com/abrar-mashuk/simplebank/db/sqlc"
-	"github.com/abrar-mashuk/simplebank/util"
+	"github.com/abrar-hossain/simplebank/api"
+	db "github.com/abrar-hossain/simplebank/db/sqlc"
+	"github.com/abrar-hossain/simplebank/util"
 )
 
 func main() {
