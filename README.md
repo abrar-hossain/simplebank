@@ -7,6 +7,7 @@ SimpleBank is a minimal core banking system implemented in Go. It includes secur
 [![Go Report Card](https://goreportcard.com/badge/github.com/abrar-hossain/simplebank)](https://goreportcard.com/report/github.com/abrar-hossain/simplebank)
 
 
+
 ## 🧠 Why This Project?
 
 This backend system was built as a hands-on learning project to explore:
@@ -115,6 +116,7 @@ To run all unit tests in the project:
 
 ```bash
 make test
+```
 
 ### Run Tests with Code Coverage
 
