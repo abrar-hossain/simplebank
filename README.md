@@ -2,9 +2,6 @@
 
 SimpleBank is a minimal core banking system implemented in Go. It includes secure authentication, transaction-safe logic, and clean architecture principles. The project simulates real-world backend development using modern tools and practices.
 
-[![CI](https://github.com/abrar-hossain/simplebank/actions/workflows/ci.yml/badge.svg)](https://github.com/abrar-hossain/simplebank/actions)
-[![Coverage](https://codecov.io/gh/abrar-hossain/simplebank/branch/main/graph/badge.svg)](https://codecov.io/gh/abrar-hossain/simplebank)
-[![Go Report Card](https://goreportcard.com/badge/github.com/abrar-hossain/simplebank)](https://goreportcard.com/report/github.com/abrar-hossain/simplebank)
 
 
 
